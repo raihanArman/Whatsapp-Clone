@@ -165,7 +165,7 @@ private struct ChannelListView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(0..<5) { _ in
-                        ChannelItemView()
+                        SuggestedItemView()
                     }
                 }
             }
@@ -182,7 +182,7 @@ private struct ChannelListView: View {
     }
 }
 
-private struct ChannelItemView: View {
+private struct SuggestedItemView: View {
     var body: some View {
         VStack {
             Circle()
