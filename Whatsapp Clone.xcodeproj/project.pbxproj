@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1840777E2C4DDC9D00BFD21B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840777D2C4DDC9D00BFD21B /* MainTabView.swift */; };
 		18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */; };
-		18CC24FA2C4D56380011F741 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC24F92C4D56380011F741 /* ContentView.swift */; };
 		18CC24FC2C4D56390011F741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FB2C4D56390011F741 /* Assets.xcassets */; };
 		18CC25002C4D56390011F741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1840777D2C4DDC9D00BFD21B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		18CC24F42C4D56380011F741 /* Whatsapp Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whatsapp Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp_CloneApp.swift; sourceTree = "<group>"; };
-		18CC24F92C4D56380011F741 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18CC24FB2C4D56390011F741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CC24FD2C4D56390011F741 /* Whatsapp_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whatsapp_Clone.entitlements; sourceTree = "<group>"; };
 		18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,10 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */,
-				18CC24F92C4D56380011F741 /* ContentView.swift */,
 				18CC24FB2C4D56390011F741 /* Assets.xcassets */,
 				18CC24FD2C4D56390011F741 /* Whatsapp_Clone.entitlements */,
 				18CC24FE2C4D56390011F741 /* Preview Content */,
+				1840777D2C4DDC9D00BFD21B /* MainTabView.swift */,
 			);
 			path = "Whatsapp Clone";
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CC24FA2C4D56380011F741 /* ContentView.swift in Sources */,
 				18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */,
+				1840777E2C4DDC9D00BFD21B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
