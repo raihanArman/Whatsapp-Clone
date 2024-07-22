@@ -16,6 +16,8 @@
 		18B61AEA2C4E939500D03459 /* SettingsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AE92C4E939500D03459 /* SettingsTabScreen.swift */; };
 		18B61AEC2C4E93F100D03459 /* SettingsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AEB2C4E93F100D03459 /* SettingsItemView.swift */; };
 		18B61AEF2C4E94BA00D03459 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AEE2C4E94BA00D03459 /* SettingsItem.swift */; };
+		18B61AF32C4EA11A00D03459 /* ChatRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AF22C4EA11A00D03459 /* ChatRoomScreen.swift */; };
+		18B61AF52C4EA2ED00D03459 /* TextInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AF42C4EA2ED00D03459 /* TextInputArea.swift */; };
 		18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */; };
 		18CC24FC2C4D56390011F741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FB2C4D56390011F741 /* Assets.xcassets */; };
 		18CC25002C4D56390011F741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		18B61AE92C4E939500D03459 /* SettingsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabScreen.swift; sourceTree = "<group>"; };
 		18B61AEB2C4E93F100D03459 /* SettingsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemView.swift; sourceTree = "<group>"; };
 		18B61AEE2C4E94BA00D03459 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
+		18B61AF22C4EA11A00D03459 /* ChatRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomScreen.swift; sourceTree = "<group>"; };
+		18B61AF42C4EA2ED00D03459 /* TextInputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputArea.swift; sourceTree = "<group>"; };
 		18CC24F42C4D56380011F741 /* Whatsapp Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whatsapp Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp_CloneApp.swift; sourceTree = "<group>"; };
 		18CC24FB2C4D56390011F741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		184077832C4E0B1800BFD21B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				18B61AF02C4EA0FD00D03459 /* Chat */,
 				1840778A2C4E0B8500BFD21B /* Settings */,
 				184077892C4E0B7500BFD21B /* Channels */,
 				184077882C4E0B6800BFD21B /* Community */,
@@ -142,6 +147,23 @@
 				18B61AEE2C4E94BA00D03459 /* SettingsItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18B61AF02C4EA0FD00D03459 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				18B61AF12C4EA10700D03459 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		18B61AF12C4EA10700D03459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B61AF22C4EA11A00D03459 /* ChatRoomScreen.swift */,
+				18B61AF42C4EA2ED00D03459 /* TextInputArea.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		18CC24EB2C4D56380011F741 = {
@@ -257,10 +279,12 @@
 				1840778D2C4E0BBC00BFD21B /* CommunityTabScreen.swift in Sources */,
 				18B61AE32C4E638100D03459 /* ChannelTabScreen.swift in Sources */,
 				18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */,
+				18B61AF32C4EA11A00D03459 /* ChatRoomScreen.swift in Sources */,
 				18B61AEC2C4E93F100D03459 /* SettingsItemView.swift in Sources */,
 				18B61AE52C4E6C6F00D03459 /* ChannelItemView.swift in Sources */,
 				1840777E2C4DDC9D00BFD21B /* MainTabView.swift in Sources */,
 				18B61AEF2C4E94BA00D03459 /* SettingsItem.swift in Sources */,
+				18B61AF52C4EA2ED00D03459 /* TextInputArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
