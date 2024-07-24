@@ -28,6 +28,7 @@
 		18CC24FC2C4D56390011F741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FB2C4D56390011F741 /* Assets.xcassets */; };
 		18CC25002C4D56390011F741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */; };
 		18E409B82C4FFB52009ACF96 /* BubbleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */; };
+		18E409BA2C508147009ACF96 /* BubbleAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E409B92C508147009ACF96 /* BubbleAudioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		18CC24FD2C4D56390011F741 /* Whatsapp_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whatsapp_Clone.entitlements; sourceTree = "<group>"; };
 		18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleImageView.swift; sourceTree = "<group>"; };
+		18E409B92C508147009ACF96 /* BubbleAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAudioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				18B61AFF2C4F35D300D03459 /* BubbleTextView.swift */,
 				18B61B012C4F36F900D03459 /* BubbleTailView.swift */,
 				18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */,
+				18E409B92C508147009ACF96 /* BubbleAudioView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				18B61AFE2C4F354E00D03459 /* MessageItem.swift in Sources */,
 				1840777E2C4DDC9D00BFD21B /* MainTabView.swift in Sources */,
 				18B61B052C4F382C00D03459 /* CustomModifiers.swift in Sources */,
+				18E409BA2C508147009ACF96 /* BubbleAudioView.swift in Sources */,
 				18B61AEF2C4E94BA00D03459 /* SettingsItem.swift in Sources */,
 				18B61AF52C4EA2ED00D03459 /* TextInputArea.swift in Sources */,
 			);
