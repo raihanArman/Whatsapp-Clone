@@ -23,7 +23,9 @@ struct LoginScreen: View {
                 forgotPasswordButton()
                 
                 AuthButton(title: "Login", onTap: {
-                    
+                    Task {
+                        await authViewModel.handleLogin()
+                    }
                 })
                 .disabled(authViewModel.disableLoginButton)
                 
@@ -34,6 +36,12 @@ struct LoginScreen: View {
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
             .background(Color.teal.gradient)
             .ignoresSafeArea()
+            .alert(isPresented: $authViewModel.errorState.showError) {
+                Alert(
+                    title: Text(authViewModel.errorState.errorMessage),
+                    dismissButton: .default(Text("Ok"))
+                )
+            }
         }
     }
     
