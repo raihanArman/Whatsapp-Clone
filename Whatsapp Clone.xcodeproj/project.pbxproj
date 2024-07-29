@@ -35,9 +35,13 @@
 		18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC24F72C4D56380011F741 /* Whatsapp_CloneApp.swift */; };
 		18CC24FC2C4D56390011F741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FB2C4D56390011F741 /* Assets.xcassets */; };
 		18CC25002C4D56390011F741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */; };
+		18CE469F2C568F7000D746CA /* SelectedChatPartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE469E2C568F7000D746CA /* SelectedChatPartnerView.swift */; };
+		18CE46A12C570E5B00D746CA /* NewGroupSetUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */; };
 		18D612122C50EEF6003FE2A4 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612112C50EEF6003FE2A4 /* AuthButton.swift */; };
 		18D612142C5104BB003FE2A4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612132C5104BB003FE2A4 /* SignUpScreen.swift */; };
 		18D612172C510881003FE2A4 /* AuthScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612162C510881003FE2A4 /* AuthScreenModel.swift */; };
+		18E022D42C537CE800004639 /* ChatPartnerPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E022D32C537CE800004639 /* ChatPartnerPickerViewModel.swift */; };
+		18E022D62C5381C100004639 /* GroupPartnerPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E022D52C5381C100004639 /* GroupPartnerPickerScreen.swift */; };
 		18E409B82C4FFB52009ACF96 /* BubbleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */; };
 		18E409BA2C508147009ACF96 /* BubbleAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E409B92C508147009ACF96 /* BubbleAudioView.swift */; };
 		18E409BD2C5089B7009ACF96 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 18E409BC2C5089B7009ACF96 /* FirebaseAuth */; };
@@ -81,9 +85,13 @@
 		18CC24FB2C4D56390011F741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CC24FD2C4D56390011F741 /* Whatsapp_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whatsapp_Clone.entitlements; sourceTree = "<group>"; };
 		18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18CE469E2C568F7000D746CA /* SelectedChatPartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedChatPartnerView.swift; sourceTree = "<group>"; };
+		18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupSetUpScreen.swift; sourceTree = "<group>"; };
 		18D612112C50EEF6003FE2A4 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		18D612132C5104BB003FE2A4 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		18D612162C510881003FE2A4 /* AuthScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModel.swift; sourceTree = "<group>"; };
+		18E022D32C537CE800004639 /* ChatPartnerPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPartnerPickerViewModel.swift; sourceTree = "<group>"; };
+		18E022D52C5381C100004639 /* GroupPartnerPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPartnerPickerScreen.swift; sourceTree = "<group>"; };
 		18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleImageView.swift; sourceTree = "<group>"; };
 		18E409B92C508147009ACF96 /* BubbleAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAudioView.swift; sourceTree = "<group>"; };
 		18E409C92C50BC9A009ACF96 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -165,10 +173,13 @@
 		184077892C4E0B7500BFD21B /* Channels */ = {
 			isa = PBXGroup;
 			children = (
+				18E022D22C537CCA00004639 /* ViewModel */,
 				186C478E2C529B9D002E748C /* ChatPartnerPickerScreen.swift */,
 				18B61AE22C4E638100D03459 /* ChannelTabScreen.swift */,
 				18B61AE42C4E6C6F00D03459 /* ChannelItemView.swift */,
 				1801C3F92C529FEA00C78EBC /* ChatPartnerRowView.swift */,
+				18E022D52C5381C100004639 /* GroupPartnerPickerScreen.swift */,
+				18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */,
 			);
 			path = Channels;
 			sourceTree = "<group>";
@@ -287,6 +298,7 @@
 				18B61B012C4F36F900D03459 /* BubbleTailView.swift */,
 				18E409B72C4FFB52009ACF96 /* BubbleImageView.swift */,
 				18E409B92C508147009ACF96 /* BubbleAudioView.swift */,
+				18CE469E2C568F7000D746CA /* SelectedChatPartnerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +363,14 @@
 			isa = PBXGroup;
 			children = (
 				18D612162C510881003FE2A4 /* AuthScreenModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18E022D22C537CCA00004639 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18E022D32C537CE800004639 /* ChatPartnerPickerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -449,8 +469,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				184077802C4DE30E00BFD21B /* UpdatesTabScreen.swift in Sources */,
+				18CE46A12C570E5B00D746CA /* NewGroupSetUpScreen.swift in Sources */,
 				18D612172C510881003FE2A4 /* AuthScreenModel.swift in Sources */,
 				186C86832C51DEB70054EE5B /* RootScreenModel.swift in Sources */,
+				18CE469F2C568F7000D746CA /* SelectedChatPartnerView.swift in Sources */,
 				18D612122C50EEF6003FE2A4 /* AuthButton.swift in Sources */,
 				184077822C4E025E00BFD21B /* CallsTabScreen.swift in Sources */,
 				186C86862C5203B10054EE5B /* UserItem.swift in Sources */,
@@ -465,6 +487,7 @@
 				186C86802C51DE930054EE5B /* RootScreen.swift in Sources */,
 				18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */,
 				18D612142C5104BB003FE2A4 /* SignUpScreen.swift in Sources */,
+				18E022D62C5381C100004639 /* GroupPartnerPickerScreen.swift in Sources */,
 				18B61AF32C4EA11A00D03459 /* ChatRoomScreen.swift in Sources */,
 				186C478F2C529B9D002E748C /* ChatPartnerPickerScreen.swift in Sources */,
 				18E409B82C4FFB52009ACF96 /* BubbleImageView.swift in Sources */,
@@ -480,6 +503,7 @@
 				18B61B052C4F382C00D03459 /* CustomModifiers.swift in Sources */,
 				18E409BA2C508147009ACF96 /* BubbleAudioView.swift in Sources */,
 				18B61AEF2C4E94BA00D03459 /* SettingsItem.swift in Sources */,
+				18E022D42C537CE800004639 /* ChatPartnerPickerViewModel.swift in Sources */,
 				18B61AF52C4EA2ED00D03459 /* TextInputArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

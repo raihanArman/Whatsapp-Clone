@@ -33,6 +33,14 @@ extension UserItem {
     }
     
     static let placeholder = UserItem(uid: "Check", username: "Ampas kuda", email: "ampaskuda@gmail.com")
+    
+    static let placeholders: [UserItem] = [
+        UserItem(uid: "1", username: "Kevin", email: "kevin@gmail.com"),
+        UserItem(uid: "2", username: "Ampas", email: "ampas@gmail.com"),
+        UserItem(uid: "3", username: "Kuda", email: "kuda@gmail.com"),
+        UserItem(uid: "4", username: "Lingard", email: "lingard@gmail.com"),
+        UserItem(uid: "5", username: "Pogba", email: "pogba@gmail.com"),
+    ]
 }
 
 extension String {

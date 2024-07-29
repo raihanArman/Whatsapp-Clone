@@ -125,3 +125,17 @@ extension AuthManager {
 
     }
 }
+
+
+extension AuthManager {
+    static let testAccounts: [String] = [
+        "QaUser1@test.com",
+        "QaUser2@test.com",
+        "QaUser3@test.com",
+        "QaUser4@test.com",
+        "QaUser5@test.com",
+        "QaUser6@test.com",
+        "QaUser7@test.com",
+        "QaUser8@test.com",
+    ]
+}
