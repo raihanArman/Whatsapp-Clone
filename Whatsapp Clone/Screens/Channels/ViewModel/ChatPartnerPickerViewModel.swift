@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
 
 enum ChannelCreationRoute {
     case groupPartnerPicker
@@ -20,6 +22,8 @@ enum ChannelConstant {
 final class ChatPartnerPickerViewModel: ObservableObject {
     @Published var navStack = [ChannelCreationRoute]()
     @Published var selectedChatPartners = [UserItem]()
+    @Published private(set) var users = [UserItem]()
+    private var lastCursor: String?
     
     var showSelectedUsers: Bool {
         return !selectedChatPartners.isEmpty
@@ -27,6 +31,36 @@ final class ChatPartnerPickerViewModel: ObservableObject {
     
     var disableNextButton: Bool {
         return selectedChatPartners.isEmpty
+    }
+    
+    var isPaginatable: Bool {
+        print("user count \(users.count)")
+        return !users.isEmpty
+    }
+    
+    init() {
+        Task {
+            await fetchUsers()
+        }
+    }
+    
+    func fetchUsers() async {
+        do {
+            let userNode = try await UserService.paginateUsers(lastCursor: lastCursor, pageSize: 5)
+            var fetchedUser = userNode.users
+            
+            // Filter not showing current user
+            guard let currentId = Auth.auth().currentUser?.uid else { return }
+            fetchedUser = fetchedUser.filter { $0.uid == currentId }
+            
+            
+            self.users.append(contentsOf: fetchedUser)
+            self.lastCursor = userNode.currentCursor
+            
+            print("Check -> lastCursor : \(lastCursor)")
+        } catch {
+            print("Failed to fetch users in chat")
+        }
     }
     
     func handleItemSelection(_ item: UserItem) {

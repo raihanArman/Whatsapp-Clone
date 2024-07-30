@@ -16,20 +16,24 @@ struct ChatPartnerPickerScreen: View {
         NavigationStack(path: $viewModel.navStack) {
             List {
                 ForEach(ChatPartnerPickerOption.allCases) { item in
-                    HeaderView(item: item)
-                        .onTapGesture {
-                            viewModel.navStack.append(.groupPartnerPicker)
-                        }
+                    HeaderView(item: item) {
+                        guard item == ChatPartnerPickerOption.newGroup else { return }
+                        viewModel.navStack.append(.groupPartnerPicker)
+                    }
                 }
                 
                 Section {
-                    ForEach(0..<12) { _ in
-                        ChatPartnerRowView(user: .placeholder)
+                    ForEach(viewModel.users) { user in
+                        ChatPartnerRowView(user: user)
                     }
                 } header: {
                     Text("Contact on Whatsapp")
                         .textCase(nil)
                         .bold()
+                }
+                
+                if viewModel.isPaginatable {
+                    loadMoreUsers()
                 }
             }
             .searchable(text: $searchText,placement: .navigationBarDrawer(displayMode: .always), prompt: "Search name or number")
@@ -42,6 +46,15 @@ struct ChatPartnerPickerScreen: View {
                 trailingNavItem()
             }
         }
+    }
+    
+    private func loadMoreUsers() -> some View {
+        ProgressView()
+            .frame(maxWidth: .infinity)
+            .listRowBackground(Color.clear)
+            .task {
+                await viewModel.fetchUsers()
+            }
     }
 }
 
@@ -83,10 +96,11 @@ extension ChatPartnerPickerScreen {
 extension ChatPartnerPickerScreen {
     private struct HeaderView: View {
         let item: ChatPartnerPickerOption
+        let onTapHandler: () -> Void
         
         var body: some View {
             Button {
-                
+                onTapHandler()
             } label: {
                 buttonBody()
             }

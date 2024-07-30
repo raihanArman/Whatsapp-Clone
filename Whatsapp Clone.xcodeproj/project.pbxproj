@@ -12,6 +12,7 @@
 		184077802C4DE30E00BFD21B /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840777F2C4DE30E00BFD21B /* UpdatesTabScreen.swift */; };
 		184077822C4E025E00BFD21B /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184077812C4E025E00BFD21B /* CallsTabScreen.swift */; };
 		1840778D2C4E0BBC00BFD21B /* CommunityTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840778C2C4E0BBC00BFD21B /* CommunityTabScreen.swift */; };
+		1867CFD32C5898EE00696E11 /* ChannelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867CFD22C5898EE00696E11 /* ChannelItem.swift */; };
 		186C478F2C529B9D002E748C /* ChatPartnerPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C478E2C529B9D002E748C /* ChatPartnerPickerScreen.swift */; };
 		186C867A2C5141F70054EE5B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C86792C5141F70054EE5B /* AuthProvider.swift */; };
 		186C867C2C5156A70054EE5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186C867B2C5156A70054EE5B /* GoogleService-Info.plist */; };
@@ -37,6 +38,7 @@
 		18CC25002C4D56390011F741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */; };
 		18CE469F2C568F7000D746CA /* SelectedChatPartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE469E2C568F7000D746CA /* SelectedChatPartnerView.swift */; };
 		18CE46A12C570E5B00D746CA /* NewGroupSetUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */; };
+		18CE46A42C571C6800D746CA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE46A32C571C6800D746CA /* UserService.swift */; };
 		18D612122C50EEF6003FE2A4 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612112C50EEF6003FE2A4 /* AuthButton.swift */; };
 		18D612142C5104BB003FE2A4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612132C5104BB003FE2A4 /* SignUpScreen.swift */; };
 		18D612172C510881003FE2A4 /* AuthScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D612162C510881003FE2A4 /* AuthScreenModel.swift */; };
@@ -60,6 +62,7 @@
 		1840777F2C4DE30E00BFD21B /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
 		184077812C4E025E00BFD21B /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
 		1840778C2C4E0BBC00BFD21B /* CommunityTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTabScreen.swift; sourceTree = "<group>"; };
+		1867CFD22C5898EE00696E11 /* ChannelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelItem.swift; sourceTree = "<group>"; };
 		186C478E2C529B9D002E748C /* ChatPartnerPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPartnerPickerScreen.swift; sourceTree = "<group>"; };
 		186C86792C5141F70054EE5B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		186C867B2C5156A70054EE5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18CE469E2C568F7000D746CA /* SelectedChatPartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedChatPartnerView.swift; sourceTree = "<group>"; };
 		18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupSetUpScreen.swift; sourceTree = "<group>"; };
+		18CE46A32C571C6800D746CA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		18D612112C50EEF6003FE2A4 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		18D612132C5104BB003FE2A4 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		18D612162C510881003FE2A4 /* AuthScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModel.swift; sourceTree = "<group>"; };
@@ -173,13 +177,9 @@
 		184077892C4E0B7500BFD21B /* Channels */ = {
 			isa = PBXGroup;
 			children = (
+				1867CFD42C589A3400696E11 /* View */,
+				1867CFD12C5898DE00696E11 /* Model */,
 				18E022D22C537CCA00004639 /* ViewModel */,
-				186C478E2C529B9D002E748C /* ChatPartnerPickerScreen.swift */,
-				18B61AE22C4E638100D03459 /* ChannelTabScreen.swift */,
-				18B61AE42C4E6C6F00D03459 /* ChannelItemView.swift */,
-				1801C3F92C529FEA00C78EBC /* ChatPartnerRowView.swift */,
-				18E022D52C5381C100004639 /* GroupPartnerPickerScreen.swift */,
-				18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */,
 			);
 			path = Channels;
 			sourceTree = "<group>";
@@ -199,6 +199,27 @@
 				1840778C2C4E0BBC00BFD21B /* CommunityTabScreen.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1867CFD12C5898DE00696E11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1867CFD22C5898EE00696E11 /* ChannelItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1867CFD42C589A3400696E11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				186C478E2C529B9D002E748C /* ChatPartnerPickerScreen.swift */,
+				18B61AE22C4E638100D03459 /* ChannelTabScreen.swift */,
+				18B61AE42C4E6C6F00D03459 /* ChannelItemView.swift */,
+				1801C3F92C529FEA00C78EBC /* ChatPartnerRowView.swift */,
+				18E022D52C5381C100004639 /* GroupPartnerPickerScreen.swift */,
+				18CE46A02C570E5B00D746CA /* NewGroupSetUpScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		186C86772C5141A90054EE5B /* Service */ = {
@@ -338,6 +359,7 @@
 		18CC24F62C4D56380011F741 /* Whatsapp Clone */ = {
 			isa = PBXGroup;
 			children = (
+				18CE46A22C571C5900D746CA /* Service */,
 				186C86872C5203E80054EE5B /* Utils */,
 				186C867B2C5156A70054EE5B /* GoogleService-Info.plist */,
 				18B61B032C4F380700D03459 /* Helpers */,
@@ -357,6 +379,14 @@
 				18CC24FF2C4D56390011F741 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18CE46A22C571C5900D746CA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18CE46A32C571C6800D746CA /* UserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		18D612152C510870003FE2A4 /* ViewModel */ = {
@@ -484,6 +514,7 @@
 				18B61AF72C4F2E6F00D03459 /* MessageListController.swift in Sources */,
 				18B61AE32C4E638100D03459 /* ChannelTabScreen.swift in Sources */,
 				18B61B022C4F36F900D03459 /* BubbleTailView.swift in Sources */,
+				1867CFD32C5898EE00696E11 /* ChannelItem.swift in Sources */,
 				186C86802C51DE930054EE5B /* RootScreen.swift in Sources */,
 				18CC24F82C4D56380011F741 /* Whatsapp_CloneApp.swift in Sources */,
 				18D612142C5104BB003FE2A4 /* SignUpScreen.swift in Sources */,
@@ -500,6 +531,7 @@
 				18B61B002C4F35D300D03459 /* BubbleTextView.swift in Sources */,
 				18B61AFE2C4F354E00D03459 /* MessageItem.swift in Sources */,
 				1840777E2C4DDC9D00BFD21B /* MainTabView.swift in Sources */,
+				18CE46A42C571C6800D746CA /* UserService.swift in Sources */,
 				18B61B052C4F382C00D03459 /* CustomModifiers.swift in Sources */,
 				18E409BA2C508147009ACF96 /* BubbleAudioView.swift in Sources */,
 				18B61AEF2C4E94BA00D03459 /* SettingsItem.swift in Sources */,

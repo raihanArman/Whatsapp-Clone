@@ -29,5 +29,5 @@ final class RootScreenModel: ObservableObject {
 //            try? await AuthManager.shared.createAccount(for: username, with: email, and: "12345678")
 //        }
 //    }
-//    
+    
 }
