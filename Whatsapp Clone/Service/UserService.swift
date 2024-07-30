@@ -36,7 +36,7 @@ struct UserService {
             return userNode
         }
         
-        result .emptyNode
+        return .emptyNode
     }
     
 //    static func paginateUsers(lastCursor: String?, pageSize: UInt) async throws -> UserNode {
