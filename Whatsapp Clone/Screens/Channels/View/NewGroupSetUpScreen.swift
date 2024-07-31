@@ -11,6 +11,8 @@ struct NewGroupSetUpScreen: View {
     @State private var channelName = ""
     @ObservedObject var viewModel: ChatPartnerPickerViewModel
     
+    var onCreate: (_ channel: ChannelItem) -> Void
+    
     var body: some View {
         List {
             Section {
@@ -72,7 +74,7 @@ struct NewGroupSetUpScreen: View {
     private func trailingNavItem() -> some ToolbarContent {
         ToolbarItem(placement: .topBarTrailing) {
             Button("Create") {
-                
+                viewModel.createGroupChannel(channelName, completion: onCreate)
             }
             .bold()
             .disabled(viewModel.disableNextButton)
@@ -83,6 +85,6 @@ struct NewGroupSetUpScreen: View {
 
 #Preview {
     NavigationStack {
-        NewGroupSetUpScreen(viewModel: ChatPartnerPickerViewModel())
+        NewGroupSetUpScreen(viewModel: ChatPartnerPickerViewModel()) { _ in}
     }
 }
