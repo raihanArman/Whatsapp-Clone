@@ -46,6 +46,14 @@ struct ChatPartnerPickerScreen: View {
             .navigationDestination(for: ChannelCreationRoute.self) { route in
                 destinationView(for: route)
             }
+            .alert(isPresented: $viewModel.errorState.showError) {
+                Alert(
+                    title:
+                        Text("Uh Oh"),
+                    message: Text(viewModel.errorState.errorMessage),
+                    dismissButton: .default(Text("Ok"))
+                )
+            }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 trailingNavItem()

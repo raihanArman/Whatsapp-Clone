@@ -14,8 +14,8 @@
             filePath = "Whatsapp Clone/Screens/Channels/ViewModel/ChatPartnerPickerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "createChannel(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "Whatsapp Clone/Screens/Channels/ViewModel/ChatPartnerPickerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "createChannel(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "Whatsapp Clone/Screens/Channels/ViewModel/ChatPartnerPickerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "createChannel(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "Whatsapp Clone/Screens/Channels/ViewModel/ChatPartnerPickerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "createChannel(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "Whatsapp Clone/Screens/Channels/ViewModel/ChatPartnerPickerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "createChannel(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,7 +104,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5807259E-F7F7-4212-B270-61EE92EF505F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Whatsapp Clone/Screens/Channels/Model/ChannelItem.swift"
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0A5DF790-7E7B-41E6-A426-808460086F64"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Whatsapp Clone/Screens/Channels/Model/ChannelItem.swift"
@@ -133,7 +133,7 @@
             <Locations>
                <Location
                   uuid = "0A5DF790-7E7B-41E6-A426-808460086F64 - 22f0834ffde91012"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Whatsapp_Clone.ChannelItem.memberExcludingMe.getter : Swift.Array&lt;Whatsapp_Clone.UserItem&gt;"
@@ -147,7 +147,7 @@
                </Location>
                <Location
                   uuid = "0A5DF790-7E7B-41E6-A426-808460086F64 - 84323fa1648f916c"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Whatsapp_Clone.UserItem) -&gt; Swift.Bool in Whatsapp_Clone.ChannelItem.memberExcludingMe.getter : Swift.Array&lt;Whatsapp_Clone.UserItem&gt;"
@@ -166,7 +166,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "48894875-2B93-4DE9-8039-93CD71D3F424"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Whatsapp Clone/Screens/Channels/Model/ChannelItem.swift"
